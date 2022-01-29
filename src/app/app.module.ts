@@ -10,6 +10,8 @@ import { ExportComponent } from './export/export.component';
 import { AddWordComponent } from './add-word/add-word.component';
 import { CardComponent } from './words/show-words/card/card.component';
 import { WordComponent } from './words/show-words/card/word/word.component';
+import { AddWordSearchComponent } from './add-word/add-word-search/add-word-search.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
 	declarations: [
@@ -19,9 +21,10 @@ import { WordComponent } from './words/show-words/card/word/word.component';
 		ExportComponent,
 		AddWordComponent,
 		CardComponent,
-		WordComponent
+		WordComponent,
+  AddWordSearchComponent
 	],
-	imports: [ BrowserModule, FormsModule ],
+	imports: [ BrowserModule, FormsModule, NgbModule ],
 	providers: [],
 	bootstrap: [ AppComponent ]
 })
